@@ -10,7 +10,7 @@ class Maze:
         self.filename = mazefile
 
         # load the maze txt file
-        with open('/Users/gregoryvasquez/PycharmProjects/pacman/maze.txt', 'r') as f:
+        with open('images/maze.txt', 'r') as f:
             self.rows = f.readlines()
 
         # create arrays and upload images for block, ball, line(walls), and power up balls
@@ -53,3 +53,5 @@ class Maze:
             self.screen.blit(self.ball.image, rect)
         for rect in self.lines:
             self.screen.blit(self.line.image, rect)
+
+
