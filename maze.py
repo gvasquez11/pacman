@@ -10,7 +10,7 @@ class Maze:
         self.filename = mazefile
 
         # load the maze txt file
-        with open('images/maze.txt', 'r') as f:
+        with open('maze.txt', 'r') as f:
             self.rows = f.readlines()
 
         # create arrays and upload images for block, ball, line(walls), and power up balls
